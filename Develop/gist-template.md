@@ -35,15 +35,15 @@ The character class in this expression is `\d`, which will only match a single c
 
 ### Grouping and Capturing
 
-The first capturing group in this expression is `([a-z0-9_\.-]+)` that matches the user email name. The second capturing group is `([\da-z\.-]+)` which will match the email service. Then lastly, capture group #3 is `([a-z\.]{2,6})` to capture the `.com` or any other finalizers in an email such as `.net`, `.edu`, or `.gov`.
+The first capturing group in this expression is `([a-z0-9_\.-]+)` that matches the user email name. The second capturing group is `([\da-z\.-]+)` which will match the email provider. Then lastly, capture group #3 is `([a-z\.]{2,6})` to capture the `.com` or any other finalizers in an email such as `.net`, `.edu`, or `.gov`.
 
 ### Bracket Expressions
 
-Bracket expressions for email validation includes the character sets of `[a-z0-9_\.-]`, which is matching any letter a-z and is case senstive. It also matches a character 0-9 and matches the characters "\_" , "-" , and "."; `[\da-z\.-]`, which is matching a single digit from 0-9, any character a-z (case senstive), and the characters "." and "-".; `[a-z\.]` matches any character a-z(case senstive) and the character ".".
+Bracket expressions for email validation include the character sets of `[a-z0-9_\.-]`, which is matching any letter a-z and is case senstive. It also matches a character 0-9 and matches the characters "\_" , "-" , and "."; `[\da-z\.-]`, which is matching a single digit from 0-9, any character a-z (case senstive), and the characters "." and "-".; `[a-z\.]` matches any character a-z(case senstive) and the character ".".
 
 ### Greedy and Lazy Match
 
-This regular expression does include greedy matches. It includes the `+` Quantifier, so it will match as many times as possible giving back as needed. The other greedy Quantifier used in this regex is `{}` when matching `{2,6} for the final capture group.
+This regular expression does include greedy matches. It includes the `+` Quantifier, so it will match as many times as possible giving back as needed. The other greedy Quantifier used in this regular expression is `{}` when matching `{2,6} for the final capture group.
 
 ## Author
 
