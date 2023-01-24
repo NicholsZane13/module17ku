@@ -1,10 +1,11 @@
-# Title (replace with your title)
+# Regex for Emails
 
-Introductory paragraph (replace this with your text)
+This is a simple explanation for a regular expression, or regex, to search for email adresses.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regex below is designed to search for the characters in an order that matches email address patterns. I will be explaining why and how it works in a precise and simple manner.
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -22,9 +23,16 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Regex Components
 
+This regex is wrapped in slash characters, ex. / ----- /. This means the expression is a literal.
+That makes the expression only look for the characters inside the expression in the order they are called.
+
 ### Anchors
 
+The anchors in this expression are the ^ and $ characters. The ^ character is verifying the beginning of the input is matched and the $ character is verifying the end of the input.
+
 ### Quantifiers
+
+Quantifiers in this regex includes the + operator, which will connect the users email name + email service + .com. Another quantifier for this regex includes {2,6}, which will allow a match range of 2-6 characters for the character set of [a-z\.].
 
 ### OR Operator
 
